@@ -1,23 +1,19 @@
 # nodupe
 
 
-README for anew
-
-anew
-
 A simple tool to append unique lines to a file.
 
 
 ---
 
-Overview
+### Overview
 
-anew is a command-line utility designed to append unique lines from stdin to a specified file. It ensures that no duplicates are added, making it a valuable tool for deduplication in various workflows.
+nodupe is a command-line utility designed to append unique lines from stdin to a specified file. It ensures that no duplicates are added, making it a valuable tool for deduplication in various workflows.
 
 
 ---
 
-Features
+### Features
 
 Appends new, unique lines to a file.
 
@@ -31,30 +27,30 @@ Works seamlessly in Unix-like environments and integrates well with other tools.
 
 ---
 
-Installation
+### Installation
 
 Using go install
 
-To install anew, ensure you have Go installed and run:
+To install nodupe, ensure you have Go installed and run:
 
-go install github.com/tomnomnom/anew@latest
+```go install github.com/Karthik-HR0/nodupe@latest```
 
 This will download and build the anew binary, placing it in your $GOPATH/bin.
 
 
 ---
 
-Usage
+### Usage
 
 Basic Syntax:
 
-cat input.txt | anew [output-file]
+cat input.txt | nodupe [output-file]
 
-Examples:
+### Examples:
 
 1. Append unique lines from a file:
 
-cat urls.txt | anew unique-urls.txt
+```cat urls.txt | anew unique-urls.txt```
 
 
 2. Use with other tools in a pipeline:
