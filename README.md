@@ -44,37 +44,37 @@ This will download and build the anew binary, placing it in your $GOPATH/bin.
 
 Basic Syntax:
 
-cat input.txt | nodupe [output-file]
+```cat input.txt | nodupe [output-file] ```
 
 ### Examples:
 
 1. Append unique lines from a file:
 
-```cat urls.txt | anew unique-urls.txt```
+```cat urls.txt | nodupe unique-urls.txt```
 
 
 2. Use with other tools in a pipeline:
 
-echo "example.com" | grep ".com" | anew domains.txt
+```echo "example.com" | grep ".com" | nodupe domains.txt```
 
 
 3. Combine with sort to maintain sorted output:
 
-sort new-data.txt | anew sorted-unique-data.txt
+```sort new-data.txt | nodupe sorted-unique-data.txt```
 
 
 
 
 ---
 
-How It Works
+### How It Works
 
-anew checks each incoming line against the contents of the specified file. If the line doesn't already exist, it is appended to the file. This ensures that the output file only contains unique entries.
+nodupe checks each incoming line against the contents of the specified file. If the line doesn't already exist, it is appended to the file. This ensures that the output file only contains unique entries.
 
 
 ---
 
-Why Use anew?
+### Why Use nodupe?
 
 Simplifies deduplication in workflows.
 
@@ -83,29 +83,4 @@ Reduces redundant processing for repetitive data.
 Integrates well with standard command-line tools.
 
 
-
----
-
-License
-
-anew is open-source and available under the MIT License. Feel free to use, modify, and distribute it as needed.
-
-
----
-
-Contributing
-
-Contributions are welcome! Feel free to submit issues or pull requests on the GitHub repository.
-
-
----
-
-Acknowledgments
-
-Developed by tomnomnom, a well-known contributor in the infosec and command-line tools community.
-
-
----
-
-Enjoy deduplication made easy with anew!
 
