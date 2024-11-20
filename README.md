@@ -33,7 +33,9 @@ Using go install
 
 To install nodupe, ensure you have Go installed and run:
 
-``` go install github.com/Karthik-HR0/nodupe@latest ```
+```
+go install -v github.com/Karthik-HR0/nodupe@latest
+```
 
 This will download and build the anew binary, placing it in your $GOPATH/bin.
 
